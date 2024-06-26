@@ -11,13 +11,13 @@
 }
 
 .cabecalho {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
@@ -32,25 +32,39 @@
     color: white;
     display: inline-block;
     padding: 16px 0px;
-    font-size: 16px;
+    font-size: 20px;
+    position: relative;
 }
 
-.cabecalho-menu li a:hover {
-    border-bottom: 4px solid white;
-    transition: .3s;
+.cabecalho-menu li a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    margin-top: 4px;
+    background-color: white;
+}
+
+.cabecalho-menu li a:hover:after {
+    width: 100%;
+    transition: .4s;
 }
 
 @media (max-width: 800px) {
 .cabecalho-menu li a {
-    border: 1px solid #777;
-    background-color: #222;
+    border: 1px solid #333;
+    background-color: #111;
     border-radius: 4px;
     padding: 10px;
-    transition: none;
 }    
 
 .cabecalho-menu li a:hover {
-    transition: 1000s;
+    background-color: #333;
+}
+
+.cabecalho-menu li a:after {
+    display: none;
 }
 
 .cabecalho {
@@ -60,9 +74,66 @@
 .cabecalho-menu {
     gap: 10px;
 }
+}
 
+/* FIM DO CABEÇALHO */
 
+/* COMEÇO DA INTRODUÇÃO */
+.main-bg {
+    background-color: black;
+}
 
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
 
+}
 
+.intro-conteudo {
+    align-content: end;
+    padding-bottom: 40px;
+    gap: 0px 40px;
+}
+
+.intro h1 {
+    margin-bottom: 40px;
+    font-size: 64px;
+    color: #eee;
+    line-height: 1.12;
+}
+
+.intro span {
+    color: #fb0;
+}
+
+.intro p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.intro-conteudo a {
+    padding: 20px 40px;
+    background: linear-gradient(135deg,#fb0,#e90);
+    display: inline-block;
+    border-radius: 5px;
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.intro-conteudo a:hover {
+    background: #e90;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    display: block;
 }
