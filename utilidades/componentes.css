@@ -1,0 +1,22 @@
+.botao {
+    padding: 30px 60px;
+    background: linear-gradient(135deg,#fb0,#e90);
+    display: inline-block;
+    border-radius: 5px;
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.botao:hover {
+    background: #e90;
+}
+
+.ponto-span {
+    color: #fb0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
