@@ -14,7 +14,7 @@
          <a href="./">
             <img src="bikcraft.svg" alt="bikcraft logo" />
          </a>
-         <nav>
+         <nav aria-label="primaria">
             <ul class="cabecalho-menu">
                <li><a href="bicicletas.html">Bicicletas</a></li>
                <li><a href="seguros.html">Seguros</a></li>
@@ -29,10 +29,11 @@
             <h1>Bicicletas feitas sob medida<span>.</span></h1>
             <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
             <a href="bicicletas.html">ESCOLHA A SUA</a>
-            <img src="dec/bottom-left.svg" alt="">
-         </div>        
-         <img src="bicicleta/nimbus1.jpg" alt="bicicleta">
-         
+         </div> 
+         <picture>
+            <source media="(max-width: 800px)" srcset="bicicleta/nimbus1.jpg">
+            <img src="bicicleta/nimbus1.jpg" width="640" height="600" alt="Bicicleta elétrica preta.">
+          </picture>        
       </div>
    </main>
 </body>
