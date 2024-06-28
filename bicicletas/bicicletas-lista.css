@@ -12,7 +12,11 @@ article h1 {
 
 .bicicletas-lista ul {
     display: flex;
-    gap: 40px;
     padding: 0 20px;
-    max-width: 1400px;
+}
+
+.modelos-item img {
+    max-width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
 }
