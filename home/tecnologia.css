@@ -1,0 +1,14 @@
+.tec-bg {
+    background-color: black;
+    box-shadow: inset 0px -120px white;
+}
+
+.tec {
+    display: flex;
+    color: white;
+    padding-top: 100px;
+}
+
+.tec img {
+    max-width: 100%;
+}
