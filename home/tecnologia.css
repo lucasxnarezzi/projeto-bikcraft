@@ -11,10 +11,6 @@
     gap: 40px;
 }
 
-.tec img {
-    max-width: 100%;
-}
-
 .tec-conteudo {
     margin-top: 200px;
 }
@@ -40,21 +36,24 @@
     color: #fb0;
     font-size: 30px;
     border-bottom: 4px solid #fb0;
+    transition: .3s;
 }
 
 .tec-conteudo a:hover {
     color: #fff;
+    border-bottom: 4px solid #fff;
 }
 
 .tec-div {
     display: flex;
     margin-top: 50px;
     gap: 20px;
+    padding-top: 20px;
 }
 
 .tec-div p {
     font-size: 20px;
-    color: #777;
+    color: #aaa;
 }
 
 .tec-item {
@@ -64,4 +63,34 @@
 
 .tec-item h3 {
     color: #ccc;
+    font-size: 20px;
+}
+
+.tec-item p {
+    font-size: 16px;
+}
+
+.img-responsiva {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+@media (max-width: 800px) {
+    .img-responsiva {
+        display: none;
+    }
+    .tec {
+        grid-template-columns: 1fr;
+    }
+    .tec-conteudo > h2 {
+        font-size: 32px;
+    }
+    .tec-conteudo > p {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .tec-div {
+        padding-bottom: 100px;
+    }
 }

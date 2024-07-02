@@ -3,6 +3,7 @@
     padding: 20px;
     gap: 40px;
     overflow-x: auto;
+    justify-content: center;
 }
 
 .bicicletas-lista li {
