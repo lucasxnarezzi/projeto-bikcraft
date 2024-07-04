@@ -35,6 +35,9 @@
         grid-template-columns: 1fr 1fr;
         padding: 0px 20px;
 }
+    .parceiros {
+        margin-top: 0px;
+}
     .parceiros li:nth-child(n + 3){
         border-top: 2px solid #eee;
 }
@@ -43,5 +46,8 @@
 }
     .parceiros h1 {
         font-size: 32px;
+}
+    .parceiros ul li img {
+        max-width: 100%;
 }
 }
