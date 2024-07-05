@@ -13,3 +13,6 @@
 
 /* BICICLETAS */
 @import url(bicicletas/bicicletas-lista.css);
+
+/*SEGUROS*/
+@import url(seguros.css);
