@@ -59,7 +59,7 @@
     margin-right: 10px;
     width: 13px;
     height: 9px;
-    background-image: url(icones/lista.svg);
+    background-image: url(../icones/lista.svg);
 }
 
 @media (max-width:860px) {
