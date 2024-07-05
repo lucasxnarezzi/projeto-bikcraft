@@ -9,6 +9,9 @@
 @import url(home/depoimento.css); /* DEPOIMENTO*/
 @import url(home/seguros.css); /*SEGUROS*/
 
+/* TERMOS */
+@import url(termos.css);
+
 /* UTILIDADES */
 @import url(utilidades/componentes.css);
 

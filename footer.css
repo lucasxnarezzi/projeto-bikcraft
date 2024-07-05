@@ -5,8 +5,7 @@
 .footer {
     display: grid;
     grid-template-columns: auto 1fr 1fr;
-    align-content: start;
-    padding: 60px;
+    padding: 60px 20px;
     gap: 40px;
     color: #aaa;
 }
@@ -49,17 +48,15 @@
 .footer-contato li {
     padding-bottom: 20px;
     font-size: 20px;
-    position: relative;
 }
 
-.footer-contato li::after {
+.footer-contato li:nth-child(even):after {
     content: '';
     display: block;
-    width: 100%;
+    max-width: 360px;
     height: 2px;
     background-color: #444;
-    position: absolute;
-    bottom: 10px;
+    margin-top: 18px;
 }
 
 @media (max-width:680px) {
@@ -78,6 +75,4 @@
     .footer p {
         grid-row: 5;
     }
-
-
 }
