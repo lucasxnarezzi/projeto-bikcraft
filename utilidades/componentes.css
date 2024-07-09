@@ -55,3 +55,19 @@ img {
 .ouro {
     color:#e90
 }
+
+.cor-bg {
+    background-color: #111;
+    padding: 40px 0px;
+}
+
+.titulo p {
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #777;
+}
+
+.titulo h1 {
+    font-size: 64px;
+    color: white;
+}
