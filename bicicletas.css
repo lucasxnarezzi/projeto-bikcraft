@@ -1,11 +1,13 @@
 .bikes-bg {
     background-color: #111;
-    margin-bottom: 50px;
 }
 
 .bicicletas-img img {
     max-width: 100%;
     object-fit: cover;
+}
+
+.bicicletas-img {
     position: relative;
 }
 
@@ -13,35 +15,81 @@
     background-color: #111;
     color: white;
     position: absolute;
-    right: 600px;
+    border-radius: 5px 0px 0px 5px;
+    right: 0px;
+    padding: 10px;
+    top: 20px;
 }
 
 .bicicleta-bg {
     background-color: #111;
-    margin-bottom: 50px;
-    padding-top: 50px;
-    box-shadow: inset 400px 0px white;
+    color: white;
+    box-shadow: inset 300px 0px white;
 }
 
 .bicicleta {
     display: flex;
-    padding-bottom: 50px;
     gap: 40px;
+    padding: 50px 20px;
+}
+
+.bicicleta-conteudo h2 {
+    font-size: 36px;
+    grid-column: 1/-1;
+}
+
+.bicicleta-conteudo h2::before {
+    content: '';
+    width: 15px;
+    height: 10px;
+    display: block;
+    margin-left: 2px;
+    background-color: #fb0;
 }
 
 .bicicleta-conteudo {
     display: grid;
     grid-template-columns: 1fr auto;
+    gap: 20px;
 }
 
 .bicicleta-conteudo p {
     grid-column: 1/-1;
+    font-size: 18px;
+    color: #777;
 }
 
 .bicicleta-conteudo ul {
     grid-column: 1;
+    font-size: 18px;
 }
 
 .bicicleta-conteudo a {
     align-self: end;
+}
+
+.bicicleta-conteudo ul li img {
+    height: 24px;
+    width: 24px;
+}
+
+.bicicleta-conteudo ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.bicicleta-conteudo a::after {
+    content: "";
+    display: inline-block;
+    background-image: url(icones/seta.svg);
+    width: 18px;
+    height: 10px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.bicicleta-conteudo a::after:hover {
+    margin-left: 10px;
 }
