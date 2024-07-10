@@ -22,9 +22,8 @@
 }
 
 .bicicleta-bg {
-    background-color: #111;
     color: white;
-    box-shadow: inset 300px 0px white;
+    background-image: linear-gradient(to right, white 30%, #111 30%);
 }
 
 .bicicleta {
@@ -40,10 +39,11 @@
 
 .bicicleta-conteudo h2::before {
     content: '';
-    width: 15px;
-    height: 10px;
+    width: 16px;
+    height: 8px;
     display: block;
     margin-left: 2px;
+    margin-bottom: 6px;
     background-color: #fb0;
 }
 
@@ -62,10 +62,13 @@
 .bicicleta-conteudo ul {
     grid-column: 1;
     font-size: 18px;
+    align-content: end;
 }
 
 .bicicleta-conteudo a {
     align-self: end;
+    display: flex;
+    align-items: center;
 }
 
 .bicicleta-conteudo ul li img {
@@ -80,16 +83,41 @@
     padding-bottom: 10px;
 }
 
-.bicicleta-conteudo a::after {
+.seta::after {
     content: "";
     display: inline-block;
     background-image: url(icones/seta.svg);
     width: 18px;
     height: 10px;
     margin-left: 5px;
-    margin-bottom: 2px;
+    transition: .3s;
 }
 
-.bicicleta-conteudo a::after:hover {
-    margin-left: 10px;
+.seta:hover:after {
+    transform: translateX(5px);
+}
+
+@media (max-width:800px) {
+    .bicicleta {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+}
+    .titulo p {
+        font-size: 20px;
+}
+    .titulo h1 {
+        font-size: 32px;
+}
+    .bicicleta-bg {
+        background-image: linear-gradient(to right, #111 30%, #111 30%);
+}
+    .bicicleta-conteudo ul {
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-columns: 1fr 1fr;
+}
+    .bicicleta-conteudo ul li {
+        font-size: 16px;
+    }
 }

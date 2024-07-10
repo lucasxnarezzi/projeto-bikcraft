@@ -4,7 +4,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 60px 20px;
     gap: 40px;
     color: #aaa;
@@ -24,7 +24,7 @@
 }
 
 .footer p {
-    grid-column: 1;
+    grid-column: 1/-1;
     grid-row: 3;
 }
 
@@ -53,7 +53,7 @@
 .footer-contato li:nth-child(even):after {
     content: '';
     display: block;
-    max-width: 360px;
+    max-width: 300px;
     height: 2px;
     background-color: #444;
     margin-top: 18px;
@@ -62,7 +62,7 @@
 @media (max-width:680px) {
     .footer {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 20px;
         padding: 20px;
 }
     .footer-contato {
