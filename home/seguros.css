@@ -71,3 +71,54 @@
     }
 
 }
+/*-------------------------------------------------------------------------*/
+.vantagens {
+    background-color: #000;
+    padding: 40px 0;
+    color: white;
+}
+
+.vantagens h2 {
+    color: white;
+    font-size: 64px;
+    padding-bottom: 50px;
+}
+
+.seguros-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.seguros-lista li {
+    display: grid;
+    gap: 15px;
+}
+
+.seguros-lista p {
+    max-width: 36ch;
+    color: #aaa;
+    line-height: 20px;
+}
+
+.seguros-lista h3 {
+    font-size: 24px;
+}
+
+@media (max-width:1000px) {
+    .seguros-lista {
+        grid-template-columns: 1fr 1fr;
+}
+    .seguros-lista p {
+        max-width: 36ch;
+    }
+}
+
+@media (max-width:700px) {
+    .seguros-lista {
+        grid-template-columns: 1fr;
+}
+    .seguros-lista p {
+        max-width: 100ch;
+}
+}
