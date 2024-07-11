@@ -2,7 +2,7 @@
     background-color: #111;
 }
 .seguros {
-    padding: 60px 20px;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
@@ -87,7 +87,8 @@
 .seguros-lista {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 50px; 
+    padding-bottom: 40px;
 }
 
 .seguros-lista li {
@@ -103,6 +104,48 @@
 
 .seguros-lista h3 {
     font-size: 24px;
+}
+
+.duvidas {
+    background-color: #bbb;
+    padding-bottom: 60px;
+}
+
+.duvidas h1 {
+    color: #000;
+    font-size: 64px;
+    padding-bottom: 60px;
+}
+
+dt  {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 30px;
+    background-color: #ddd;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+}
+
+dt::before {
+    content: '';
+    width: 12px;
+    height: 8px;
+    display: inline-block;  
+    background-color: #fb0;
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+
+
+dd {
+    display: none;
+    font-size: 20px;
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+dt:active + dd {
+    display: block;
 }
 
 @media (max-width:1000px) {
