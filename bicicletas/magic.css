@@ -37,6 +37,7 @@
     grid-template-columns: max-content auto;
     gap: 8px;
     padding-bottom: 30px;
+    align-items: center;
     justify-items: start;
 }
 
@@ -46,6 +47,7 @@
 
 .bicicleta-comprar span {
     display: flex;
+    align-items: center;
     gap: 5px;
     padding: 5px;
     border-radius: 5px;
@@ -68,6 +70,7 @@
     border-radius: 5px;
     padding: 30px 30px 0 30px;
     margin-bottom: 30px;
+    gap: 30px;
 }
 
 .bike-info li {
@@ -81,12 +84,13 @@
 
 .bike-info h3 {
     font-size: 16px;
-    color: #aaa;
+    color: #fff;
 }
 
 .bike-info p {
     font-size: 16px;
     line-height: 20px;
+    color: #777;
 }
 
 .bike-ficha {
@@ -103,11 +107,31 @@
     padding: 6px 0px;
 }
 
-@media (max-width:900px) {
+@media (max-width:800px) {
     .conteudo-bike {
         grid-template-columns: 1fr;
     }
     .bikes-img {
         grid-row: 2;
+    }
+    .titulo {
+        padding: 20px;
+    }
+    .botao {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:400px) {
+    .bicicleta-comprar {
+        grid-template-columns: 1fr;
+    }
+    .bike-info {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .bikes-img {
+        grid-template-columns: 1fr;
     }
 }
