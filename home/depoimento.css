@@ -57,5 +57,9 @@ blockquote p::after {
 @media (max-width:800px) {
     .depoimento {
         grid-template-columns: 1fr;
-}
+    }
+    .depoimento-conteudo {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
 }

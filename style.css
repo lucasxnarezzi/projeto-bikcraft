@@ -21,4 +21,7 @@
 
 /* BICICLETAS */
 @import url(bicicletas.css);
-@import url(bicicletas/magic.css);
+@import url(bicicletas/bike-individual.css);
+
+/* CONTATO */
+@import url(contato.css);

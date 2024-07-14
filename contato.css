@@ -1,0 +1,16 @@
+.contato-principal {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.contato-local {
+    background-color: #000;
+}
+
+.contato-form {
+    background-color: #eee;
+}
+
+.contato-local a {
+    display: block;
+}

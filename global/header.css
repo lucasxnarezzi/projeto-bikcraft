@@ -42,12 +42,18 @@
 }
 
 @media (max-width: 800px) {
-.cabecalho-menu li a {
-    border: 1px solid #333;
-    background-color: #111;
-    border-radius: 4px;
-    padding: 10px;
+    .cabecalho-menu li a {
+        border: 1px solid #333;
+        background-color: #111;
+        border-radius: 4px;
+        padding: 10px;
 }    
+
+@media (max-width:400px) {
+    .cabecalho-menu li a {
+        font-size: 14px;
+    }
+}
 
 .cabecalho-menu li a:hover {
     background-color: #333;
