@@ -9,6 +9,7 @@
     font-size: 20px;
     max-width: max-content;
     white-space: nowrap;
+    border: none;
 }
 
 .botao:hover {
