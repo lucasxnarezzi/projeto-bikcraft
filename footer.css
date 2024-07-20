@@ -59,6 +59,10 @@
     margin-top: 18px;
 }
 
+.footer-contato li:last-child {
+    padding-bottom: 0;
+}
+
 @media (max-width:680px) {
     .footer {
         grid-template-columns: 1fr;

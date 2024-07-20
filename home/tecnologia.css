@@ -9,6 +9,7 @@
     grid-template-columns: 1fr 1fr;
     color: white;
     gap: 40px;
+    padding: 20px 0px;
 }
 
 .tec-conteudo {
@@ -81,10 +82,13 @@
         display: none;
     }
     .tec-bg {
-        margin-top: 0px;
+        box-shadow: none;
     }
     .tec {
         grid-template-columns: 1fr;
+    }
+    .tec-conteudo {
+        margin-top: 0px;
     }
     .tec-conteudo > h2 {
         font-size: 32px;
@@ -95,5 +99,8 @@
     }
     .tec-div {
         padding-bottom: 100px;
+    }
+    .tec-conteudo a {
+        font-size: 20px;
     }
 }

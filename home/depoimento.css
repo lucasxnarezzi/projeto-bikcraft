@@ -1,8 +1,8 @@
 .depoimento {
     background-color: #111;
-    margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
 
 .depoimento img {

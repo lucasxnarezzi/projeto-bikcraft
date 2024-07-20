@@ -1,5 +1,6 @@
 .termo-conteudo {
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .termo-bg {
@@ -7,7 +8,7 @@
 }
 
 .termo-conteudo h2 {
-    padding: 30px 0px;
+    padding-bottom: 30px;
 }
 
 .termo-conteudo p {
