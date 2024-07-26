@@ -5,7 +5,7 @@
 /* FOOTER */
 @import url(footer.css);
 
-/* HOME*/
+/* HOME */
 @import url(home/intro.css);
 @import url(home/tecnologia.css); /* TECNOLOGIA */  
 @import url(bicicletas/bicicletas-lista.css);

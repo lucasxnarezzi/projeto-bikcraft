@@ -3,16 +3,17 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Contato | Bikcraft</title>
+   <title>Orçamento | Bikcraft</title>
    <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft."/>
    <link rel="stylesheet" href="style.css" />
    <link rel="shortcut icon" href="./icones/eletrica.svg" type="image/x-icon"/>
 </head>
+
 <body id="orcamento">
    <header class="cabecalho-bg">
       <div class="cabecalho container">
          <a href="./">
-            <img src="bikcraft.svg" alt="bikcraft logo" />
+            <img src="bikcraft.svg" alt="bikcraft logo"/>
          </a>
          <nav aria-label="primaria">
             <ul class="cabecalho-menu">
@@ -24,18 +25,69 @@
       </div>
    </header>
 
-   <main>
+   <section>
       <div class="termo-bg">
          <div class="titulo container">
             <p>COTAÇÕES NO SEU EMAIL</p>
             <h1>solicite um orçamento<span class="ponto-span">.</span></h1>
          </div>
       </div> 
+   </section>
+
+   <form class="orcamento container" action="./">
+      <div class="orcamento-produto">
+         <h2 class="col-2">BIKCRAFT OU SEGURO?</h2>
+            <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+            <label for="bikcraft">Bikcraft</label>
+            <input type="radio" name="tipo" value="seguro" id="seguro">
+            <label for="seguro">Seguro</label>
+         <div class="orcamento-conteudo" id="orcamento-bikcraft">
+            <h2 class="col-2">ESCOLHA A SUA</h2>
+            <input type="radio" name="tipo-bike" value="nimbus" id="nimbus">
+            <label for="nimbus">Nimbus Stark</label>
+            <input type="radio" name="tipo-bike" value="magic" id="magic">
+            <label for="magic">Magic Might</label>
+            <input type="radio" name="tipo-bike" value="nebula" id="nebula">
+            <label for="nebula">Nebula Cosmic</label>
+         </div>
+         <div class="orcamento-conteudo" id="orcamento-seguro">
+            <h2>ESCOLHA O PLANO</h2>
+            <input type="radio" name="tipo-seguro" value="prata" id="prata">
+            <label for="prata">Prata</label>
+            <input type="radio" name="tipo-seguro" value="ouro" id="ouro">
+            <label for="ouro">Ouro</label>
+         </div>      
+      </div>
+      <div class="orcamento-dados">
+         <h2>DADOS PESSOAIS</h2>
+         <label for="nome">Nome</label>
+         <input type="text" id="nome" name="nome">
+         <label for="sobrenome">Sobrenome</label>
+         <input type="text" id="sobrenome" name="sobrenome">
+         <label for="cpf">CPF</label>
+         <input type="text" id="cpf" name="cpf">
+         <label for="email">Email</label>
+         <input type="adress" id="email" name="email">
+         <h2>DADOS ENTREGA</h2>
+         <label for="cep">CEP</label>
+         <input type="text" id="cep" name="cep">
+         <label for="numero">Número</label>
+         <input type="text" id="numero" name="numero">
+         <label for="logradouro">Logradouro</label>
+         <input type="text" id="logradouro" name="logradouro">
+         <label for="bairro">Bairro</label>
+         <input type="text" id="bairro" name="bairro">
+         <label for="cidade">Cidade</label>
+         <input type="text" id="cidade" name="cidade">
+         <label for="estado">Estado</label>
+         <input type="text" id="estado" name="estado">
+         <button class="botao">SOLICITAR ORÇAMENTO</button>
+      </div>
+   </form>
       
    
 
 
-   </main>
       
    <footer class="footer-bg">
       <div class="footer container">

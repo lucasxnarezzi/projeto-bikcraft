@@ -1,0 +1,66 @@
+#orcamento {
+    background: linear-gradient(to bottom, #111 550px, #eee 0px);
+}
+
+.orcamento h2 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.orcamento h2::before {
+    content: "";
+    width: 4px;
+    height: 12px;
+    background-color: #fb0;
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.orcamento {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding-bottom: 60px;
+}
+
+/* PARTE DE ESCOLHA DE PRODUTO */
+
+.orcamento-produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #000;
+    color: #aaa;
+    padding: 40px;
+    border-radius: 5px 0 0 5px;
+}
+
+.orcamento-produto input {
+}
+
+.orcamento-produto label {
+    background-color: #444;
+    padding: 10px;
+}
+
+
+/* PARTE DE FORMULÁRIO COM DADOS */
+
+.orcamento-dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 40px;
+}
+
+.orcamento-dados label {
+    display: inline-block;
+}
