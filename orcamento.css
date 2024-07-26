@@ -32,17 +32,15 @@
 
 /* PARTE DE ESCOLHA DE PRODUTO */
 
+.orcamento-produto label {
+    display: inline-block;
+}
+
 .orcamento-produto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
     background-color: #000;
     color: #aaa;
     padding: 40px;
     border-radius: 5px 0 0 5px;
-}
-
-.orcamento-produto input {
 }
 
 .orcamento-produto label {
@@ -56,11 +54,22 @@
 .orcamento-dados {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     background-color: #fff;
     border-radius: 0 5px 5px 0;
     padding: 40px;
 }
 
 .orcamento-dados label {
-    display: inline-block;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.orcamento-dados input {
+    padding: 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
